@@ -1,34 +1,52 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Inter;
     display: flex;
     min-height: 100vh;
 }
 
 .sidenav {
-    padding-top: 50px;
     display: flex;
-    width: 250px;
+    width: auto;
     flex-direction: column;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
     z-index: 1;
+    padding: 10px 15px;
+}
+
+.sidenav #dashboard {
+    color: #203D89;
+    border-radius: 26px;
+    border: 1px solid #203D89;
 }
 
 .sidenav a {
-    padding: 10px 15px;
-    text-align: center;
+    padding: 0px 15px;
+    margin-top: 10px;
+    text-align: left;
     text-decoration: none;
     color: #000;
+    justify-content: space-between; 
 }
 
-.sidenav a:hover {
-    box-shadow: 0 0 3px 1px black;
+.sidenav a:last-child {
+    margin-top: auto;
 }
 
 .content {
     background-color: #EAE5E5;
     flex: 1;
     padding: 20px;
+}
+
+.svgIcon{
+    vertical-align: middle;
+    height: 1em;
+}
+
+#logo{
+    height: 53px;
+    align-self: stretch;
 }
 
 
