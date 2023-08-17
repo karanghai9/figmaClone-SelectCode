@@ -7,25 +7,33 @@ body {
 
 .sidenav {
     display: flex;
-    width: auto;
     flex-direction: column;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
     z-index: 1;
     padding: 10px 15px;
+    position: fixed;
+    height: 99%;
+    overflow-y: auto;
+    background-color: #FFF;
+    width: auto;
+    max-width: 195px;
 }
 
 .sidenav #dashboard {
+    padding: 4px 10px;
+    align-items: center;
+    gap: 10px;
     color: #203D89;
     border-radius: 26px;
     border: 1px solid #203D89;
 }
 
 .sidenav a {
-    padding: 0px 15px;
     margin-top: 10px;
     text-align: left;
     font-size: 25px;
     line-height: 30px;
+    font-weight: 400;
     text-decoration: none;
     color: #000;
     justify-content: space-between; 
@@ -46,10 +54,12 @@ body {
 }
 
 .content-wrapper {
+    margin-left: 225px;
     background-color: #EAE5E5;
     flex: 1;
     display: flex;
     flex-direction: column;
+    padding-left: 10px;
 }
 
 .header {
@@ -77,14 +87,111 @@ body {
     line-height: normal;
 }
 
-.content {
-    flex: 1;
-    padding: 0px 20px;
-}
-
 #userIcon{
+    width: 109px;
+    height: 90px;
     clip-path: circle(30%);
 }
 
+.content {
+    flex: 1;
+    padding: 10px;
+}
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
 
+.card {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+}
+
+.card_title{
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sample_text{
+    flex: 1 0 0;
+    align-self: stretch;
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.userDetails{
+    display: flex;
+    padding: 5px 5px 5px 0px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.charges{
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.gap{
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+#logo_small{
+    display: none;
+}
+
+@media (max-width: 393px) {
+    .sidenav {
+        display: none;
+        position: unset;
+    }
+
+    .content-wrapper {
+        margin-left: 0;
+    }
+
+    #logo_small{
+        display: block;
+    }
+
+    #userIcon{
+        width: 67px;
+        height: 54px;   
+        clip-path: circle(30%);
+    }
+
+    #dashboard_heading{
+        color: #6B6B6B;
+        font-family: Inter;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
@@ -13,7 +14,9 @@
         <a href="#" id="dashboard">
             <span class="svgIcon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                    <path d="M3.375 18L16.806 4.56748C17.466 3.90898 18.534 3.90898 19.1925 4.56748L32.625 18M6.75 14.625V29.8125C6.75 30.744 7.506 31.5 8.4375 31.5H14.625V24.1875C14.625 23.256 15.381 22.5 16.3125 22.5H19.6875C20.619 22.5 21.375 23.256 21.375 24.1875V31.5H27.5625C28.494 31.5 29.25 30.744 29.25 29.8125V14.625M12.375 31.5H24.75" stroke="#203D89" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path
+                        d="M3.375 18L16.806 4.56748C17.466 3.90898 18.534 3.90898 19.1925 4.56748L32.625 18M6.75 14.625V29.8125C6.75 30.744 7.506 31.5 8.4375 31.5H14.625V24.1875C14.625 23.256 15.381 22.5 16.3125 22.5H19.6875C20.619 22.5 21.375 23.256 21.375 24.1875V31.5H27.5625C28.494 31.5 29.25 30.744 29.25 29.8125V14.625M12.375 31.5H24.75"
+                        stroke="#203D89" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </span>Dashboard
         </a>
@@ -41,7 +44,8 @@
         <a href="#">
             <span class="svgIcon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
-                    <path d="M28.125 29.25L16.875 18L28.125 6.75M19.125 29.25L7.875 18L19.125 6.75" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M28.125 29.25L16.875 18L28.125 6.75M19.125 29.25L7.875 18L19.125 6.75" stroke="black"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </span>
             Collapse
@@ -50,16 +54,253 @@
 
     <div class="content-wrapper">
         <div class="header">
+            <img src="assets/grafik 1_small.png" id="logo_small" alt="Logo">
             <div>
                 <div id="dashboard_heading">Dashboard</div>
-                <div id="dashboard_details">Projects: 42  | Customers: 10</div>
+                <div id="dashboard_details">Projects: 42 | Customers: 10</div>
             </div>
             <img src="assets/grafik 2.png" id="userIcon" alt="userIcon">
         </div>
 
 
-    <div class="content">
-        <h1>Main content</h1>
+        <div class="content">            
+            <div class="card-container">
+
+                <div class="card">
+                    <div class="card_title">Yakidoo</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer A</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_title">Lexoo</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer B</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_title">Bluejam</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer C</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_title">Devshare</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer A</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_title">Edgewire</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer D</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_title">Wikizz</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer A</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_title">Roombo</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer A</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_title">Dabjam</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer A</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_title">Photobug</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer A</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_title">Shuffletag</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer A</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_title">Thoughtbridge</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer A</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_title">Twinte</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer A</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_title">Yakidoo</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer A</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_title">Lexoo</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer B</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_title">Bluejam</div>
+                    <div class="sample_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+                    <div class="userDetails">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.25 18.75C7.58561 18.7457 12.898 19.4522 18.047 20.851C18.774 21.049 19.5 20.509 19.5 19.755V18.75M3.75 4.5V5.25C3.75 5.44891 3.67098 5.63968 3.53033 5.78033C3.38968 5.92098 3.19891 6 3 6H2.25M2.25 6V5.625C2.25 5.004 2.754 4.5 3.375 4.5H20.25M2.25 6V15M20.25 4.5V5.25C20.25 5.664 20.586 6 21 6H21.75M20.25 4.5H20.625C21.246 4.5 21.75 5.004 21.75 5.625V15.375C21.75 15.996 21.246 16.5 20.625 16.5H20.25M2.25 15V15.375C2.25 15.6734 2.36853 15.9595 2.5795 16.1705C2.79048 16.3815 3.07663 16.5 3.375 16.5H3.75M2.25 15H3C3.19891 15 3.38968 15.079 3.53033 15.2197C3.67098 15.3603 3.75 15.5511 3.75 15.75V16.5M20.25 16.5V15.75C20.25 15.5511 20.329 15.3603 20.4697 15.2197C20.6103 15.079 20.8011 15 21 15H21.75M20.25 16.5H3.75M15 10.5C15 11.2956 14.6839 12.0587 14.1213 12.6213C13.5587 13.1839 12.7956 13.5 12 13.5C11.2044 13.5 10.4413 13.1839 9.87868 12.6213C9.31607 12.0587 9 11.2956 9 10.5C9 9.70435 9.31607 8.94129 9.87868 8.37868C10.4413 7.81607 11.2044 7.5 12 7.5C12.7956 7.5 13.5587 7.81607 14.1213 8.37868C14.6839 8.94129 15 9.70435 15 10.5ZM18 10.5H18.008V10.508H18V10.5ZM6 10.5H6.008V10.508H6V10.5Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">1.2345,67 €</span>
+                        <span class="gap"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15.75 6C15.75 6.99456 15.3549 7.94839 14.6517 8.65165C13.9484 9.35491 12.9946 9.75 12 9.75C11.0054 9.75 10.0516 9.35491 9.34836 8.65165C8.6451 7.94839 8.25001 6.99456 8.25001 6C8.25001 5.00544 8.6451 4.05161 9.34836 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6ZM4.50101 20.118C4.53314 18.1504 5.33735 16.2742 6.74018 14.894C8.14302 13.5139 10.0321 12.7405 12 12.7405C13.9679 12.7405 15.857 13.5139 17.2598 14.894C18.6627 16.2742 19.4669 18.1504 19.499 20.118C17.1464 21.1968 14.5882 21.7535 12 21.75C9.32401 21.75 6.78401 21.166 4.50101 20.118Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="charges">Customer C</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
     </div>
 
 </body>
