@@ -24,6 +24,8 @@ body {
     padding: 0px 15px;
     margin-top: 10px;
     text-align: left;
+    font-size: 25px;
+    line-height: 30px;
     text-decoration: none;
     color: #000;
     justify-content: space-between; 
@@ -31,12 +33,6 @@ body {
 
 .sidenav a:last-child {
     margin-top: auto;
-}
-
-.content {
-    background-color: #EAE5E5;
-    flex: 1;
-    padding: 20px;
 }
 
 .svgIcon{
@@ -49,6 +45,46 @@ body {
     align-self: stretch;
 }
 
+.content-wrapper {
+    background-color: #EAE5E5;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+#dashboard_heading{
+    color: #6B6B6B;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#dashboard_details{
+    color: #6B6B6B;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content {
+    flex: 1;
+    padding: 0px 20px;
+}
+
+#userIcon{
+    clip-path: circle(30%);
+}
 
 
 
